@@ -1,0 +1,78 @@
+body{
+  padding-top: 8rem;
+  padding-bottom: 4rem;
+  background-color: #edece2;
+}
+.navbar{
+  background-color: #11ac9e;
+}
+.nav-item .active{
+  background-color: #0f8278;
+}
+.img-small{
+  width: 5rem;
+  height: 5rem;
+  padding: 0.5rem;
+}
+.fa-trash-alt{
+  color: #f12b2b;
+}
+.car-op{
+  margin: 2rem;
+}
+.portfolio-item {
+  margin-bottom: 2rem;
+}
+.txt-red{
+  color: #da0a50;
+}
+hr{
+  border-top: 1px solid #ffffff;
+}
+.pagination {
+  margin-bottom: 2rem;
+}
+
+.card-img-top{
+  width: 100%;
+  max-width: 35rem;
+  height: auto;
+  max-height: 35rem;
+  align-self: center;
+  padding: 3rem;
+}
+#cd-cart{
+  z-index: 1000;
+  margin-top: 3rem;
+}
+.btn-center{
+  border-radius: 1rem;
+  margin: 0 auto 2rem;
+  background-color: #3cb5a6;
+}
+#contact{
+  width: 100%;
+  max-width: 120rem;
+  height: 50rem;
+  max-height: 75rem;
+  background-image: url('../images/contact.jpg');
+  padding: 4rem;
+}
+.f-cafe{
+  padding: 4rem;
+  width: 100%;
+  background-color: #140d03;
+  opacity: 0.7;
+  border-radius: 1em;
+  box-shadow: 4px 4px 20px 6px rgba(194,175,142,0.5);
+  color: #ffffff;
+}
+.form-reg{
+  margin: auto;
+}
+
+#443C27, #00654B, , #00B9BD, #00E1FB
+
+
+
+#35C2BD,#61b3a9,#7fdfd7,#beeea7,#d09eae,,

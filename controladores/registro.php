@@ -13,24 +13,22 @@ if (isset($_POST['enviar'])) {
 	$numero = $mysqli->real_escape_string($_POST['numero']);
 
 	if (isNull($nombre, $apellido, $contraseña, $con_contraseña, $correo, $numero)) {
-		echo "rellena los campos";
-		$errors[]="rellena los campos";
-		header("location: ../vistas/registro.php");
+		$errors[]="Rellena todos los campos";
+		
 	}
 	if(!isEmail($correo)){
-		echo "direccion invalida";
-		$errors[]="direccion invalida";
-		header("location: ../vistas/registro.php");
+		$errors[]="Dirección '$correo' invalida";
+		
 	}
 	if(!validatePassword($contraseña, $con_contraseña)){
-		echo "las contraseñas no coinciden";
-		$errors[]="las contraseñas no coinciden";
-		header("location: ../vistas/registro.php");
+		$errors[]="Las contraseñas no coinciden";
+		
 	}
 	if (emailExist($correo)) {
-		echo "el correo '$correo' ya existe";
-		$errors[]="el correo '$correo' ya existe";
-		header("location: ../vistas/registro.php");
+		$errors[]="El correo '$correo' ya existe";
+	}
+	if (minMax(10, 12, $numero)){
+		$errors[]="El número tiene errores";
 	}
 
 	if(count($errors)==0){
@@ -38,11 +36,8 @@ if (isset($_POST['enviar'])) {
 		$register = registerUser($nombre, $apellido, $contraseña, $correo, $numero, $token);
 		if($register > 0){
 			echo "exito";
-			header("location: ../vistas/home.php");
 		}else{
-			$errors[]="Error al registrar";
-			header("location: ../vistas/registro.php");
-			echo resultBlock($errors);
+			$errors[]="El número tiene errores";
 		}
 	}
 }

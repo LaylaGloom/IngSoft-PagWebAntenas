@@ -2,7 +2,7 @@
   <div class="row">
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../recursos/images/antena.png" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="verproduct.php">Project One</a>
@@ -13,7 +13,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../recursos/images/antena.png" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="verproduct.php">Project Two</a>
@@ -24,7 +24,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../recursos/images/antena.png" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="verproduct.php">Project Three</a>
@@ -35,7 +35,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../recursos/images/antena.png" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="verproduct.php">Project Four</a>
@@ -46,7 +46,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../recursos/images/antena.png" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project Five</a>
@@ -57,7 +57,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../recursos/images/antena.png" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project Six</a>
@@ -68,7 +68,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../recursos/images/antena.png" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project Seven</a>
@@ -79,7 +79,7 @@
         </div>
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
-            <a href="#"><img class="card-img-top" src="../recursos/images/antena.png" alt=""></a>
+            <a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>
             <div class="card-body">
               <h4 class="card-title">
                 <a href="#">Project Eight</a>

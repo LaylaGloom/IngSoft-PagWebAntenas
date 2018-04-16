@@ -3,7 +3,7 @@
 <?php include ('carrito.php'); ?>
 <div class="container">
   <div class="row">
-    <div id="contact" >
+    <div class="col-lg-8 col-md-9 col-sm-12 form-reg">
       <div class="f-cafe">
         <h4 class="text-center">Contacto</h4>
         <hr>

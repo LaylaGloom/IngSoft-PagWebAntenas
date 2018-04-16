@@ -2,6 +2,10 @@ body{
   padding-top: 8rem;
   padding-bottom: 4rem;
   background-color: #edece2;
+  background-image: url('../images/contact.jpg');
+}
+#infor{
+  background-image: url('../images/contact.jpg');
 }
 .navbar{
   background-color: #11ac9e;

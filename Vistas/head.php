@@ -11,5 +11,6 @@
     <link rel="stylesheet" href="../recursos/css/carrito.css">
     <link rel="stylesheet" href="../recursos/css/styles.css">
 
+    
   </head>
   <body>

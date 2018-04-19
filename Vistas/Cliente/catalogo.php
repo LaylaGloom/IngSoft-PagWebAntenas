@@ -1,5 +1,5 @@
  <?php
-require '../php/conexion.php';
+require '../../php/conexion.php';
 
 ?>
 
@@ -16,12 +16,12 @@ require '../php/conexion.php';
     $productos = mysqli_query($mysqli, "SELECT * FROM producto");
 
 
-    while($row =mysqli_fetch_array($productos)) 
+    while($row =mysqli_fetch_array($productos))
     {
 
       echo '<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">';
       echo '<div class="card h-100">';
-      echo '<a href="#"><img class="card-img-top" src="../recursos/images/antena.png" alt=""></a>';
+      echo '<a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>';
       echo '<div class="card-body">';
         echo '<h4 class="card-title">';
         echo '<a href="producto.php?id='.$row['idproducto'].'">'; echo $row['nombreProducto']; echo '</a>';
@@ -41,7 +41,7 @@ require '../php/conexion.php';
 
       ?>
 
-      
+
 
 
 
@@ -57,7 +57,7 @@ require '../php/conexion.php';
             </div>
           </div>
         </div>
-<<<<<<< HEAD:Vistas/Cliente/catalogo.php
+<!--<<<<<<< HEAD:Vistas/Cliente/catalogo.php-->
         <div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">
           <div class="card h-100">
             <a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>
@@ -136,18 +136,18 @@ require '../php/conexion.php';
           </div>
         </div>
       </div>
-=======
-      
-
-      
-      
-       
-      
-      
-       
+<!--=======-->
 
 
-       
-      </div> <!-- acaba una row -->
->>>>>>> b2e83d4c015ae044597130dbd653a3fa426b27a5:Vistas/catalogo.php
+
+
+
+
+
+
+
+
+
+      </div> <!-- acaba una row
+<!->>>>>>> b2e83d4c015ae044597130dbd653a3fa426b27a5:Vistas/catalogo.php-->
 </div>

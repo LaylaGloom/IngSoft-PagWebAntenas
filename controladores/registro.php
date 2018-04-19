@@ -17,7 +17,7 @@ if (isset($_POST['enviar'])) {
 		
 	}
 	if(!isEmail($correo)){
-		$errors[]="Dirección '$correo' invalida";
+		$errors[]="Dirección $correo invalida";
 		
 	}
 	if(!validatePassword($contraseña, $con_contraseña)){
@@ -25,10 +25,10 @@ if (isset($_POST['enviar'])) {
 		
 	}
 	if (emailExist($correo)) {
-		$errors[]="El correo '$correo' ya existe";
+		$errors[]="El correo $correo ya existe";
 	}
-	if (minMax(10, 12, $numero)){
-		$errors[]="El número tiene errores";
+	if (minMax(10, 10, $numero)){
+		$errors[]="El número tiene que ser de 10 digitos";
 	}
 
 	if(count($errors)==0){
@@ -36,8 +36,9 @@ if (isset($_POST['enviar'])) {
 		$register = registerUser($nombre, $apellido, $contraseña, $correo, $numero, $token);
 		if($register > 0){
 			echo "exito";
+			header("location: ../Vistas/Cliente/login.php");
 		}else{
-			$errors[]="El número tiene errores";
+			$errors[]="El número no valido";
 		}
 	}
 }

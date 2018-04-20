@@ -25,6 +25,7 @@ CREATE TABLE IF NOT EXISTS `Antena`.`clientes` (
   `contraseña` VARCHAR(100) NOT NULL,
   `telefono` VARCHAR(15) NOT NULL,
   `token` VARCHAR(200) NOT NULL,
+  `activacion` INT NULL,
   PRIMARY KEY (`idCliente`))
 ENGINE = InnoDB;
 

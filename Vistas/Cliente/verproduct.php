@@ -1,5 +1,5 @@
 <?php include ('head.php'); ?>
-<?php include ('menu.html'); ?>
+<?php include ('menu.php'); ?>
 <?php include ('carrito.php'); ?>
 <?php include ('buscador.php'); ?>
 <?php include ('producto.php'); ?>

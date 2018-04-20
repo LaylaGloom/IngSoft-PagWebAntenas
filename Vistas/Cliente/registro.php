@@ -1,5 +1,4 @@
 <?php include ('head.php'); ?>
-<?php include ('../../controladores/registro.php');?>
 <?php include ('menu.php'); ?>
 <?php include ('carrito.php'); ?>
 
@@ -9,7 +8,7 @@
       <div class="f-cafe">
         <h4 class="text-center">Registro</h4>
         <hr>
-        <form method="POST" action="<?php $_SERVER['PHP_SELF']?>">
+        <form method="POST" action="../../controladores/registro.php">
             <label for="nombre">Nombre:</label>
             <input class="form-control input-sm" id="inputsm" type="text" name="nombre" value="" required>
             <label for="apellido">Apellidos:</label>

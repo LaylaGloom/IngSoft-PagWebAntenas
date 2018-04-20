@@ -7,7 +7,7 @@
       <div class="f-cafe">
         <h4 class="text-center">Iniciar Sesión</h4>
         <hr>
-        <form method="POST" action="<?php $_SERVER['PHP_SELF']?>">
+        <form method="POST" action="../../controladores/login.php">
           <label for="nombre">Correo Electrónico:</label>
           <input class="form-control input-sm" id="inputsm" type="email" name="correo" value="" placeholder="ejemplo@algo.com" required="Ingresa tu correo electrónico">
           <label for="contraseña">Contraseña:</label>

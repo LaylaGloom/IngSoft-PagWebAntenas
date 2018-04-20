@@ -154,7 +154,7 @@ function login($correo, $contraseña){
 				$_SESSION['nombre_cliente']=$nombre;
 				echo $_SESSION['nombre_cliente'];
 				$_SESSION['id_usuario']=$id;
-				header("location: ../Cliente/home.php");
+				header("location: ../Vistas/Cliente/home.php");
 			}else{
 				$errors = "La contraseña es incorrecta";
 			}		

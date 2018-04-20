@@ -24,7 +24,11 @@ CREATE TABLE IF NOT EXISTS `Antena`.`clientes` (
   `email` VARCHAR(100) NOT NULL,
   `contraseña` VARCHAR(100) NOT NULL,
   `telefono` VARCHAR(15) NOT NULL,
-  `token` VARCHAR(200) NOT NULL,
+  `last_session` datetime NULL,
+  `activacion` INT NULL,
+  `token` VARCHAR(200) NULL,
+  `token_password` VARCHAR(200) NULL,
+  `password_request` INT NULL,
   PRIMARY KEY (`idCliente`))
 ENGINE = InnoDB;
 
@@ -89,20 +93,6 @@ CREATE TABLE IF NOT EXISTS `Antena`.`compras` (
     ON UPDATE CASCADE)
 ENGINE = InnoDB;
 
-
-
--- -----------------------------------------------------
--- Table `Antena`.`usuarios`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `Antena`.`usuarios` (
-  `idusuario` INT NOT NULL,
-  `nickname` VARCHAR(45) NOT NULL,
-  `nombre` VARCHAR(45) NOT NULL,
-  `apellidos` VARCHAR(45) NOT NULL,
-  `rol` VARCHAR(45) NOT NULL,
-  `privilegio` TINYINT NULL,
-  PRIMARY KEY (`idusuario`))
-ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------

@@ -6,7 +6,8 @@
 
 <?php
 
-  require '../php/conexion.php';
+  require '../../controladores/connection.php';
+
   
   if(!empty($_GET))
   {

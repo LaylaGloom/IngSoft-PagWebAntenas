@@ -10,29 +10,46 @@ require '../../controladores/connection.php';
 
     <?php
 
+    require_once '../../controladores/Zebra_Pagination.php';
+
     global $mysqli;
 
 
     $productos = mysqli_query($mysqli, "SELECT * FROM producto");
+    $num_registros = mysqli_num_rows($productos);
+
+    $resultados_x_pagina = 2;
+
+    $paginacion;
+
+    $paginacion = new Zebra_Pagination();
+    $paginacion -> records($num_registros);
+    $paginacion -> records_per_page($resultados_x_pagina);
 
 
-    while($row =mysqli_fetch_array($productos))
+    $filtro = 'SELECT * FROM producto order by idproducto DESC LIMIT ' .(($paginacion->get_page() - 1) * $resultados_x_pagina).','.$resultados_x_pagina;
+    $result = mysqli_query($mysqli, $filtro);
+
+
+    while($row =mysqli_fetch_array($result))
     {
 
       echo '<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">';
       echo '<div class="card h-100">';
       echo '<a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>';
-      echo '<div class="card-body">';
+      echo '<div class="card-body">'; 
         echo '<h4 class="card-title">';
         echo '<a href="producto.php?id='.$row['idproducto'].'">'; echo $row['nombreProducto']; echo '</a>';
         echo '</h4>';
-      echo ' <p class="card-text">';  echo substr($row['descripcion'], 0 , 180). '.....';  echo '</p>';
+      echo ' <p class="card-text">';  echo substr($row['descripcion'], 0 , 150). '.....';  echo '</p>';
       echo '</div>';
       echo '</div>';
       echo '</div>';
 
 
     }
+
+
 
 
       ?>
@@ -55,8 +72,8 @@ require '../../controladores/connection.php';
         </div> 
 
         -->
+      </div> 
 
-
-      </div> <!-- acaba una row
-<!->>>>>>> b2e83d4c015ae044597130dbd653a3fa426b27a5:Vistas/catalogo.php-->
+  <?php 
+    $paginacion->render();  ?>
 </div>

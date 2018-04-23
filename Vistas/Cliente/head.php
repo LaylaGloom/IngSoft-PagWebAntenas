@@ -11,5 +11,6 @@
     <link rel="stylesheet" href="../../recursos/css/carrito.css">
     <link rel="stylesheet" href="../../recursos/css/styles.css">
     <link rel="stylesheet" href="../../recursos/css/zebra_pagination.css" type="text/css">
+    <link rel="stylesheet" href="../../recursos/css/usuarios.css" type="text/css">
   </head>
   <body>

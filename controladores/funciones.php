@@ -8,6 +8,15 @@ function isNull($nombre, $apellido, $contraseña, $confirmar, $correo, $numero){
 
 }
 
+function isNullPsw($contraseña_act, $contraseña_conf, $contraseña){
+	if (strlen(trim($contraseña)) < 1 || strlen(trim($contraseña_conf)) < 1 || strlen(trim($contraseña_act)) < 1) {
+		return true;
+	}else{
+		return false;
+	}
+
+}
+
 function isEmail($email){
 	if(filter_var($email, FILTER_VALIDATE_EMAIL)){
 		return true;

@@ -20,6 +20,12 @@ if (isset($_POST['enviar'])) {
 		$errors[]="Dirección $correo invalida";
 		
 	}
+	 if(minMax(5, 10, $contraseña)){
+  		$errors[]="El campo Contraseña debe tener al mínimo 6 caracteres y máximo 9";
+ 	 }
+  	if(minMax(5, 10, $con_contraseña)){
+  		$errors[]="El campo Confirmar contraseña  debe tener al mínimo 6 caracteres y máximo 9";
+  	}
 	if(!validatePassword($contraseña, $con_contraseña)){
 		$errors[]="Las contraseñas no coinciden";
 		
@@ -28,7 +34,7 @@ if (isset($_POST['enviar'])) {
 		$errors[]="El correo $correo ya existe";
 	}
 	if (minMax(10, 10, $numero)){
-		$errors[]="El número tiene que ser de 10 digitos";
+		$errors[]="El número tiene que ser de mínimo 10 digitos";
 	}
 
 	if(count($errors)==0){

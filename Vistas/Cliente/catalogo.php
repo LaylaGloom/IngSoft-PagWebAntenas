@@ -18,7 +18,7 @@ require '../../controladores/connection.php';
     $productos = mysqli_query($mysqli, "SELECT * FROM producto");
     $num_registros = mysqli_num_rows($productos);
 
-    $resultados_x_pagina = 2;
+    $resultados_x_pagina = 4;
 
     $paginacion;
 
@@ -36,7 +36,7 @@ require '../../controladores/connection.php';
 
       echo '<div class="col-lg-3 col-md-4 col-sm-6 portfolio-item">';
       echo '<div class="card h-100">';
-      echo '<a href="#"><img class="card-img-top" src="../../recursos/images/antena.png" alt=""></a>';
+      echo '<a href="#"><img class="card-img-top" src="'.$row['img_path'].'" alt=""></a>';
       echo '<div class="card-body">'; 
         echo '<h4 class="card-title">';
         echo '<a href="producto.php?id='.$row['idproducto'].'">'; echo $row['nombreProducto']; echo '</a>';

@@ -34,6 +34,8 @@
       $desc = $row['descripcion'];
       $modelo = $row['modelo'];
       $marca = $row['marca'];
+      $cantidad = $row['cantidad'];
+      $img = $row['img_path'];
 
     }
 
@@ -57,19 +59,45 @@
         <div class="col-lg-8">
 
           <div class="card mt-4">
-            <img class="card-img-top img-fluid " src="../recursos/images/antenaL.png" alt="">
+            <img class="card-img-top img-fluid " src=<?php echo $img;  ?> alt="">
             <div class="card-body">
               <h3 class="card-title"><?php echo $nombre; ?> <small>id: <?php echo $id;  ?></small> </h3>
               <h4>$<?php echo $precio;  ?></h4>
               <p class="card-text">  <?php echo $desc;  ?></p>
               <p>Modelo:  <?php echo $modelo;  ?></p>
               <p>Marca:  <?php echo $marca;  ?></p>
-              <h5>Estado: <small>Disponible</small></h5>
+
+              <?php if($cantidad > 0)
+              {
+                echo '<h5>Estado: <small>Disponible</small></h5>';
+
+              } else 
+              {
+                echo '<h5>Estado: <small>Sin Stock</small></h5>';
+              } 
+
+               ?>
+
+              
               <span class="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
               4.0 stars
             </div>
             <div class="row">
-              <a href="#" class="btn btn-center">Agregar al carrito</a>
+
+              <?php
+                if($cantidad > 0)
+                {
+                  echo '<a href="#" class="btn btn-center">Agregar al carrito</a>';
+
+                }else
+                {
+                  echo '<a href="#" class="btn btn-center">Sin Stock :(</a>';
+
+                }
+
+                ?>
+
+              
             </div>
           </div>
           <div class="row">
